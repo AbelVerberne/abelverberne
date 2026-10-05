@@ -443,6 +443,40 @@ nav .home-link-m{
 }
 
 
+.xeno-grid .process-grid{
+    grid-template-areas: 
+    
+    "box-2 box-2 box-2 box-7"
+    "box-2 box-2 box-2 box-7"
+
+    "box-10 box-3 box-3 box-3"
+    "box-10 box-3 box-3 box-3"
+
+    "box-6 box-6 box-1 box-1"
+    "box-6 box-6 box-1 box-1"
+
+    "box-12 box-11 box-11 box-11"
+    "box-12 box-11 box-11 box-11"
+
+    "box-5 box-5 box-5 box-4"
+    "box-5 box-5 box-5 box-4"
+    
+    "box-9 box-9 box-8 box-8"
+    "box-9 box-9 box-8 box-8";
+}
+
+
+.dinner-grid .process-grid{
+    
+    grid-template-areas: 
+    
+    "box-2 box-2 box-3 box-3"
+    "box-1 box-1 box-1 box-1"
+    "box-1 box-1 box-1 box-1"
+    "box-4 box-4 box-6 box-6"
+    "box-5 box-5 box-6 box-6";
+}
+
 @media(max-width: 700px){     
     .skull-dance-grid .process-grid{
     grid-auto-columns: 100vw;
@@ -541,38 +575,28 @@ nav .home-link-m{
     .dinner-grid .process-grid{
         grid-auto-columns: 100%;
         grid-auto-rows: 20vw;
-        gap: 3em 1em;
+        gap: 3em 2em;
         grid-template-areas: 
         "box-1"
+        "box-1"
+        "box-2"
         "box-2"
         "box-3"
+        "box-3"
+        "box-4"
         "box-4"
         "box-5"
+        "box-5"
+        "box-6"
+        "box-6"
+        "box-6"
         "box-6";
+    }
+    .dinner-grid{
+        padding-bottom: 2em;
     }
 }
 
-.xeno-grid .process-grid{
-    grid-template-areas: 
-    
-    "box-2 box-2 box-2 box-7"
-    "box-2 box-2 box-2 box-7"
-
-    "box-10 box-3 box-3 box-3"
-    "box-10 box-3 box-3 box-3"
-
-    "box-6 box-6 box-1 box-1"
-    "box-6 box-6 box-1 box-1"
-
-    "box-12 box-11 box-11 box-11"
-    "box-12 box-11 box-11 box-11"
-
-    "box-5 box-5 box-5 box-4"
-    "box-5 box-5 box-5 box-4"
-    
-    "box-9 box-9 box-8 box-8"
-    "box-9 box-9 box-8 box-8";
-}
 
 @media(max-width: 700px){
     .xeno-grid .process-grid{
@@ -653,16 +677,6 @@ nav .home-link-m{
 
 }
 
-.dinner-grid .process-grid{
-    
-    grid-template-areas: 
-    
-    "box-2 box-2 box-3 box-3"
-    "box-1 box-1 box-1 box-1"
-    "box-1 box-1 box-1 box-1"
-    "box-4 box-4 box-6 box-6"
-    "box-5 box-5 box-6 box-6";
-}
 @media(min-width:700px){
 .octo-grid .process-grid{
     grid-template-areas: 
