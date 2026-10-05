@@ -537,6 +537,19 @@ nav .home-link-m{
         "box-2"
         "box-2";
     }
+
+    .dinner-grid .process-grid{
+        grid-auto-columns: 100%;
+        grid-auto-rows: 20vw;
+        gap: 3em 1em;
+        grid-template-areas: 
+        "box-1"
+        "box-2"
+        "box-3"
+        "box-4"
+        "box-5"
+        "box-6";
+    }
 }
 
 .xeno-grid .process-grid{
