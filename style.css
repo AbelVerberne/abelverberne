@@ -997,12 +997,12 @@ nav .home-link-m{
 }
 
 .content h1{
-    font-size: max(3.5em, 5vw );
+    font-size: min(6em, 10vw);
     
 }
 
 .content p{
-    font-size: max(1.2em, 1.5vw);
+    font-size: min(1.5em, 4.5vw);
     font-family: 'Montserrat', Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -1832,6 +1832,44 @@ footer{
     opacity: 100%;
 }
 
+.email-hover{
+    position: relative;
+}
+
+.email-hover p{
+    font-size: 1.1em;
+}
+
+.email-hover br{
+    content: "";
+    margin: 2em;
+    display: block;
+    font-size: 15%;
+}
+
+.email-hover a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.email-hover a::after{
+    content: '';
+    background: var(--text-color);
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 12%;
+    width: 0%;
+    border-radius: 1.5px;
+    opacity: 50%;
+    transition: 0.4s;
+}
+
+.email-hover a:hover::after{
+    width: 29%;
+    opacity: 100%;
+    
+}
 
 
 @media(max-width:700px){
