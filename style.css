@@ -28,7 +28,7 @@
 }
 
 /*debugging*/
-/* *{border: 1px solid red;} */
+ *{border: 1px solid red;}
 
 html {
     font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -477,6 +477,20 @@ nav .home-link-m{
     "box-5 box-5 box-6 box-6";
 }
 
+.goober-grid .process-grid{
+    grid-template-areas: 
+    "box-2 box-2 box-1 box-1"
+    "box-2 box-2 box-1 box-1"
+    "box-3 box-3 box-4 box-4"
+    "box-3 box-3 box-4 box-4";
+}
+
+.goober-trade{
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+}
+
 @media(max-width: 700px){     
     .skull-dance-grid .process-grid{
     grid-auto-columns: 100vw;
@@ -631,6 +645,12 @@ nav .home-link-m{
     .xeno-grid, .octo-grid, .dinner-grid{
         padding-bottom: 2em;
     }
+    
+    .goober-grid .process-grid{
+    grid-auto-columns: 20vw;
+    grid-auto-rows: auto;
+    gap: 5vw 5vw;
+}
 }
 
 @media(max-width:700px){
@@ -640,9 +660,7 @@ nav .home-link-m{
 }
 @media(max-width:500px){
 .xeno-grid .process-grid{
-    grid-auto-columns: 50vw;
-    grid-auto-rows: auto;
-    gap: 16vw 0;
+    
     grid-template-areas: 
     
     "box-2 box-2"
@@ -671,9 +689,19 @@ nav .home-link-m{
     "box-8 box-8"
     "box-8 box-8";
 }
+
+    .goober-grid{
+    grid-auto-columns: 50vw;
+    grid-auto-rows: auto;
+    gap: 2vw 0;
+    grid-template-areas: 
+    "box-2" 
+    "box-1"
+    "box-3"
+    "box-4";
     
 }
-
+}
 
 @media(min-width:700px){
 .octo-grid .process-grid{
@@ -742,6 +770,7 @@ nav .home-link-m{
 
 .pg-content img, .pg-content video{
     align-items: center;
+    max-width: 100%;
 }
 
 .pg-content .grid-static img{
@@ -770,19 +799,6 @@ nav .home-link-m{
     scale: 1.0;
 }
 
-.goober-grid .process-grid{
-    grid-template-areas: 
-    "box-2 box-2 box-1 box-1"
-    "box-2 box-2 box-1 box-1"
-    "box-3 box-3 box-4 box-4"
-    "box-3 box-3 box-4 box-4";
-}
-
-.goober-trade{
-    position: relative;
-    width: 100vw;
-    max-width: 100%;
-}
 .g1, .g2, .g3, .g4{
     position: absolute;
     
@@ -1298,7 +1314,7 @@ nav .home-link-m{
 }
 
 .project-title h1{
-    font-size: clamp(2em, 8vw, 5.3em );
+    font-size: clamp(2.6em, 8vw, 5.3em );
     transition: filter 0.5s;
 }
 
@@ -1656,6 +1672,7 @@ footer{
 }
 
 .subject-box h1{
+    font-size: min(2em, 7vw);
     padding: 0.8em 0 0.4em;
 }
 
@@ -1903,6 +1920,7 @@ footer{
         font-size: 1.5em;
     }
 }
+
 
 /*
 h1, h2, h3{
